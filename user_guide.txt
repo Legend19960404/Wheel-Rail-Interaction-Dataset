@@ -1,0 +1,21 @@
+======================================================[Code File Composition]======================================================
+1. standard_profiles: Directory for storing standard profile files.
+2. database_steady_rolling.py: Main code for dataset generation.
+3. generate_field.py: Code for computing contact patch physical fields.
+4. compute_mesh.py: Code for solving contact geometry.
+5. generate_field.py: Code for solving contact patch physical fields.
+6. generate_mesh.py: Code for generating wheel-rail surface meshes.
+7. generate_sdf.py: Code for generating signed distance fields of wheel-rail surfaces.
+8. pre_computation.py: Code for precomputing motion parameters.
+9. Task1-Task3.txt: Example task configuration files.
+10. parallel.bat: Script for generating computational tasks and parallel scheduling.
+11. start.bat: Script for launching computational tasks.
+======================================================[Operation Steps]=============================================================
+1. Define task configuration files following the format of Task1.txt. 
+   Each task can correspond to one or more computational conditions. 
+   There is no requirement for the naming of task configuration files – only that they are in JSON format.
+2. Double-click to launch the parallel.bat script and wait for all tasks to complete.
+======================================================[Notes]========================================================================
+1. All the above files must be placed in the code directory of the contact virtual environment.
+2. To modify the number of simultaneously running tasks, change the MAX_JOBS variable in the parallel.bat script. 
+   It is recommended not to exceed 8 tasks; setting too many concurrent tasks may result in some tasks failing to activate.

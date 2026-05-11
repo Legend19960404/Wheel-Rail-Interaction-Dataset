@@ -1,0 +1,10 @@
+{
+	"work_dir": "./standard_profiles",
+	"root_dir": "./root_dir",
+	"start_idx": 2,
+	"end_idx": 2,
+	"flag_mesh": false,
+	"flag_sdf": false,
+	"flag_to_global": false,
+	"flag_snap": false
+}

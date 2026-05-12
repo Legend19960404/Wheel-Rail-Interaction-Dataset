@@ -1,3 +1,19 @@
+======================================================[Reqiures]======================================================
+Constructing the conda environment requires the following dependency packages:
+[joblib]
+[pandas]
+[numpy]
+[matplotlib]
+[openpyxl]
+[scikit-learn]
+[scipy]
+[python_intfc]
+[vtk]
+Among them, the python_intfc dependency package needs to be obtained following the steps below:
+1. Compile the CONTACT source code, which is available at: https://github.com/eve70a/CONTACT.
+2. Encapsulate the Python interface provided by the source code into a dependency package.
+3. Place the compiled dynamic link library contact_addon_win64.dll into the bin directory of the conda environment (create the bin directory if it does not exist).
+4. Store the source code in the code directory of the conda environment (create the code directory if it does not exist).
 ======================================================[Code File Composition]======================================================
 1. standard_profiles: Directory for storing standard profile files.
 2. database_steady_rolling.py: Main code for dataset generation.
